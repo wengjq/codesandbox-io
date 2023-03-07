@@ -1,0 +1,104 @@
+{
+  "O8Fbwg": {
+    "files": {
+      "package.json": {
+        "code": "{\"title\":\"基本用法 - @fk/faicomponent@2.15.8\",\"dependencies\":{\"vue\":\"2.6.11\",\"@fk/faicomponent\":\"2.15.8\"},\"devDependencies\":{\"@vue/cli-plugin-babel\":\"~4.5.0\",\"vue-template-compiler\":\"2.6.11\"},\"browserslist\":[\"> 1%\",\"last 2 versions\",\"not ie <= 8\"]}",
+        "isBinary": false
+      },
+      "src/demo.vue": {
+        "code": "<template>\n  <div>\n    <fa-switch defaultChecked @change=\"onChange\" />\n  </div>\n</template>\n<script>\n  export default {\n    data() {\n      return {};\n    },\n    methods: {\n      onChange(checked) {\n        console.log(`fa-switch to ${checked}`);\n      },\n    },\n  };\n</script>\n",
+        "isBinary": false
+      },
+      "src/App.vue": {
+        "code": "<template>\n  <Demo />\n</template>\n\n<script>\nimport Demo from \"./demo.vue\";\nexport default {\n  components: {\n    Demo,\n  },\n};\n</script>",
+        "isBinary": false
+      },
+      "src/main.js": {
+        "code": "import Vue from \"vue\";\nimport App from \"./App.vue\";\nimport \"./styles.css\";\nimport faicomponent from '@fk/faicomponent';\nVue.use(faicomponent);\nnew Vue({\n  render: (h) => h(App),\n}).$mount(\"#app\");\n",
+        "isBinary": false
+      }
+    },
+    "date": "2023-03-02 11:46:37"
+  },
+  "B8jmwN": {
+    "files": {
+      "package.json": {
+        "code": "{\"title\":\"按钮类型 - @fk/faicomponent@2.15.8\",\"dependencies\":{\"vue\":\"2.6.11\",\"@fk/faicomponent\":\"2.15.8\"},\"devDependencies\":{\"@vue/cli-plugin-babel\":\"~4.5.0\",\"vue-template-compiler\":\"2.6.11\"},\"browserslist\":[\"> 1%\",\"last 2 versions\",\"not ie <= 8\"]}",
+        "isBinary": false
+      },
+      "src/demo.vue": {
+        "code": "<template>\n  <div>\n    <fa-button type=\"primary\">Primary</fa-button>\n    <fa-button>Default</fa-button>\n    <fa-button type=\"dashed\">Dashed</fa-button>\n    <fa-button type=\"danger\">Danger</fa-button>\n    <fa-config-provider :autoInsertSpaceInButton=\"false\">\n      <fa-button type=\"primary\">按钮</fa-button>\n    </fa-config-provider>\n    <fa-button type=\"primary\">按钮</fa-button>\n    <fa-button type=\"link\">Link</fa-button>\n  </div>\n</template>\n",
+        "isBinary": false
+      },
+      "src/App.vue": {
+        "code": "<template>\n  <Demo />\n</template>\n\n<script>\nimport Demo from \"./demo.vue\";\nexport default {\n  components: {\n    Demo,\n  },\n};\n</script>",
+        "isBinary": false
+      },
+      "src/main.js": {
+        "code": "import Vue from \"vue\";\nimport App from \"./App.vue\";\nimport \"./styles.css\";\nimport faicomponent from '@fk/faicomponent';\nVue.use(faicomponent);\nnew Vue({\n  render: (h) => h(App),\n}).$mount(\"#app\");\n",
+        "isBinary": false
+      }
+    },
+    "date": "2023-03-02 11:48:05"
+  },
+  "DCHGiU": {
+    "files": {
+      "src/styles.css": {
+        "content": "body {\n  font-family: sans-serif;\n  -webkit-font-smoothing: auto;\n  -moz-font-smoothing: auto;\n  -moz-osx-font-smoothing: grayscale;\n  font-smoothing: auto;\n  text-rendering: optimizeLegibility;\n  font-smooth: always;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-touch-callout: none;\n}\n\nh1 {\n  font-size: 1.5rem;\n}",
+        "isBinary": false
+      },
+      "src/App.vue": {
+        "content": "<template>\n  <Demo />\n</template>\n\n<script>\nimport Demo from \"./demo.vue\";\nexport default {\n  components: {\n    Demo,\n  },\n};\n</script>",
+        "isBinary": false
+      },
+      "src/main.js": {
+        "content": "import Vue from \"vue\";\nimport App from \"./App.vue\";\nimport \"./styles.css\";\nimport faicomponent from '@fk/faicomponent';\nVue.use(faicomponent);\nnew Vue({\n  render: (h) => h(App),\n}).$mount(\"#app\");\n",
+        "isBinary": false
+      },
+      "public/index.html": {
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\" />\n    <title>codesandbox</title>\n  </head>\n  <body>\n    <noscript>\n      <strong\n        >We're sorry but codesandbox doesn't work properly without JavaScript\n        enabled. Please enable it to continue.</strong\n      >\n    </noscript>\n    <div id=\"app\"></div>\n    <!-- built files will be auto injected -->\n  </body>\n</html>\n",
+        "isBinary": false
+      },
+      "package.json": {
+        "content": "{\n  \"title\": \"基本用法 - @fk/faicomponent@2.15.8\",\n  \"dependencies\": {\n    \"vue\": \"2.6.11\",\n    \"@fk/faicomponent\": \"2.15.8\"\n  },\n  \"devDependencies\": {\n    \"@vue/cli-plugin-babel\": \"~4.5.0\",\n    \"vue-template-compiler\": \"2.6.11\"\n  },\n  \"browserslist\": [\n    \"> 1%\",\n    \"last 2 versions\",\n    \"not ie <= 8\"\n  ]\n}",
+        "isBinary": false
+      },
+      "src/demo.vue": {
+        "content": "<template>\n  <div>\n    <fa-switch defaultChecked @change=\"onChange\" />\n  </div>\n</template>\n<script>\n  export default {\n    data() {\n      return {};\n    },\n    methods: {\n      onChange(checked) {\n        console.log(`fa-switch to ${checked}`);\n      },\n    },\n  };\n</script>\n",
+        "isBinary": false
+      }
+    },
+    "template": "vue-cli",
+    "date": "2023-03-03 14:56:03"
+  },
+  "RD9Zqh": {
+    "files": {
+      "src/styles.css": {
+        "content": "body {\n  font-family: sans-serif;\n  -webkit-font-smoothing: auto;\n  -moz-font-smoothing: auto;\n  -moz-osx-font-smoothing: grayscale;\n  font-smoothing: auto;\n  text-rendering: optimizeLegibility;\n  font-smooth: always;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-touch-callout: none;\n}\n\nh1 {\n  font-size: 1.5rem;\n}",
+        "isBinary": false
+      },
+      "src/App.vue": {
+        "content": "<template>\n  <Demo />\n</template>\n\n<script>\nimport Demo from \"./demo.vue\";\nexport default {\n  components: {\n    Demo,\n  },\n};\n</script>",
+        "isBinary": false
+      },
+      "src/main.js": {
+        "content": "import Vue from \"vue\";\nimport App from \"./App.vue\";\nimport \"./styles.css\";\nimport faicomponent from '@fk/faicomponent';\nVue.use(faicomponent);\nnew Vue({\n  render: (h) => h(App),\n}).$mount(\"#app\");\n",
+        "isBinary": false
+      },
+      "public/index.html": {
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1.0\" />\n    <title>codesandbox</title>\n  </head>\n  <body>\n    <noscript>\n      <strong\n        >We're sorry but codesandbox doesn't work properly without JavaScript\n        enabled. Please enable it to continue.</strong\n      >\n    </noscript>\n    <div id=\"app\"></div>\n    <!-- built files will be auto injected -->\n  </body>\n</html>\n",
+        "isBinary": false
+      },
+      "package.json": {
+        "content": "{\n  \"title\": \"基本用法 - @fk/faicomponent@2.15.8\",\n  \"dependencies\": {\n    \"vue\": \"2.6.11\",\n    \"@fk/faicomponent\": \"2.15.8\"\n  },\n  \"devDependencies\": {\n    \"@vue/cli-plugin-babel\": \"~4.5.0\",\n    \"vue-template-compiler\": \"2.6.11\"\n  },\n  \"browserslist\": [\n    \"> 1%\",\n    \"last 2 versions\",\n    \"not ie <= 8\"\n  ]\n}",
+        "isBinary": false
+      },
+      "src/demo.vue": {
+        "content": "<template>\n    <div>\n        <fa-table rowKey=\"a\" :scroll=\"{ x: 800 }\" :dataSource=\"dataSource\" skinType=\"form-page\">\n            <fa-table-column :width=\"100\" title=\"a\" data-index=\"a\" />\n            <fa-table-column :width=\"100\" title=\"b\" data-index=\"b\" />\n            <fa-table-column :width=\"100\" title=\"c\" data-index=\"c\" />\n            <fa-table-column :width=\"100\" title=\"d\" data-index=\"d\" />\n            <fa-table-column :width=\"100\" title=\"e\" data-index=\"e\" />\n            <fa-table-column fixed=\"right\" :width=\"200\" title=\"审核状态\">\n                <template slot-scope=\"row\">已通过</template>\n            </fa-table-column>\n            <fa-table-column fixed=\"right\" :width=\"200\" title=\"操作\">\n                <template slot-scope=\"row\">\n                    <fa-button>提审</fa-button>\n                </template>\n            </fa-table-column>\n        </fa-table>\n    </div>\n</template>\n<script>\nexport default {\n    data() {\n        return {\n            dataSource: [{ a: 1, b: 2, c: 3, d: 4, e: 5 }],\n        };\n    },\n    methods: {},\n};\n</script>",
+        "isBinary": false
+      }
+    },
+    "template": "vue-cli",
+    "date": "2023-03-03 14:58:10"
+  }
+}
